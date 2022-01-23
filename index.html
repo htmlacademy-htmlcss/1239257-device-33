@@ -12,37 +12,41 @@
       <img src="" alt="Логотип магазина">
     </a>
     <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-      <input class="header-search-field" type="text" name="search-field" value="Текст поиска" id="">
-      <button class="header-search-btn">Найти</button>
+      <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="">
+      <button class="header-search-btn" type="submit">Найти</button>
     </form>
     <ul class="header-usermenu">
       <li class="header-usermenu-item">
-        <a href="#" class="header-usermenu-link">Войти</a>
+        <a class="header-usermenu-link" href="#">Войти</a>
       </li>
       <!-- Еще один пункт меню появляется после авторизации пользователя -->
       <!-- <li class="header-usermenu-item">
         <a href="#" class="header-usermenu-link">Выйти</a>
       </li> -->
       <li class="header-usermenu-item">
-        <a href="#" class="header-usermenu-link">Сравнить</a>
+        <a class="header-usermenu-link" href="#">Сравнить</a>
       </li>
       <li class="header-usermenu-item">
-        <a href="#" class="header-usermenu-link">Корзина</a>
+        <a class="header-usermenu-link" href="#">Корзина</a>
+        <span class="header-usermenu-count">2</span>
       </li>
     </ul>
     <nav class="header-navigation">
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
-          <a href="catalog.html" class="header-navigation-link">Каталог товаров</a>
+          <a class="header-navigation-link" href="catalog.html">Каталог товаров</a>
+          <button class="header-navigation-btn" type="button">
+            <span class="visually-hidden">Показать категории товаров</span>
+          </button>
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">Доставка</a>
+          <a class="header-navigation-link" href="#">Доставка</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">Гарантия</a>
+          <a class="header-navigation-link" href="#">Гарантия</a>
         </li>
         <li class="header-navigation-item">
-          <a href="#" class="header-navigation-link">Контакты</a>
+          <a class="header-navigation-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -222,15 +226,59 @@
       </p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="subscribe-input" type="email" name="subscribe-email" id="user-subscribe" placeholder="Ваш e-mail"
-          autofocus required>
+          required>
         <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
       <span class="subscribe-slogan">Это бесплатно</span>
     </section>
   </main>
 
-
+  <footer class="footer">
+    <a class="logo footer-logo">
+      <img src="" alt="Логотип магазина">
+    </a>
+    <address>
+      Санкт-Петербург, набережная реки Карповки, 5, литера П.
+    </address>
+    <ul class="footer-navigation">
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Гарантия</a>
+      </li>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <a href="tel:+78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
+    <ul class="footer-social">
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer-dev-link" href="https://htmlacademy.ru">
+      <span class="visually-hidden">HTML Academy</span>
+    </a>
+  </footer>
 
 </body>
 
 </html>
+
+Facebook — https://www.facebook.com/htmlacademy
+Instagram — https://www.instagram.com/htmlacademy/
+Twitter — https://twitter.com/htmlacademy_ru
+Логотип .html academy ведёт на главную страницу сайта разработчика — https://htmlacademy.ru/
