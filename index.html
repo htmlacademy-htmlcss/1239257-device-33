@@ -9,10 +9,11 @@
 <body>
   <header class="header">
     <a class="logo header-logo">
-      <img src="" alt="Логотип магазина">
+      <img src="" alt="Логотип магазина.">
     </a>
     <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-      <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска">
+      <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="user-search"
+        aria-label="Строка поиска.">
       <button class="header-search-btn" type="submit">Найти</button>
     </form>
     <ul class="header-usermenu">
@@ -21,7 +22,7 @@
       </li>
       <!-- Еще один пункт меню появляется после авторизации пользователя -->
       <!-- <li class="header-usermenu-item">
-        <a href="#" class="header-usermenu-link">Выйти</a>
+        <a class="header-usermenu-link" href="#">Выйти</a>
       </li> -->
       <li class="header-usermenu-item">
         <a class="header-usermenu-link" href="#">Сравнить</a>
@@ -35,9 +36,6 @@
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
           <a class="header-navigation-link" href="catalog.html">Каталог товаров</a>
-          <button class="header-navigation-btn" type="button">
-            <span class="visually-hidden">Показать категории</span>
-          </button>
           <ul class="header-submenu">
             <li class="header-submenu-item">
               <a class="header-submenu-link" href="#">Виртуальная реальность</a>
@@ -73,13 +71,13 @@
   </header>
 
   <main class="main-page">
-    <h1 class="visually-hidden">Интернет-магазин Device</h1>
+    <h1 class="visually-hidden">Интернет-магазин Device.</h1>
 
     <section class="slider">
-      <h2 class="visually-hidden">Лучшие товары</h2>
+      <h2 class="visually-hidden">Лучшие товары.</h2>
       <ol class="slider-gallery">
         <li class="slider-item">
-          <img class="slider-item-photo" src="" alt="Квадрокоптер">
+          <img class="slider-item-photo" src="" alt="Квадрокоптер.">
           <h3 class="slider-item-title">
             Порхает как бабочка, жалит как пчела!
           </h3>
@@ -95,21 +93,21 @@
           </dl>
         </li>
         <li class="slider-item">
-          <img src="" alt="Фитнес-браслет" class="slider-item-photo">
+          <img class="slider-item-photo" src="" alt="Фитнес-браслет.">
           <h3 class="slider-item-title">
             Худеем правильно!
           </h3>
           <p class="slider-item-text">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
-          <a href="#" class="slider-item-link">Подробнее</a>
+          <a class="slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-facts">
             <dt class="slider-item-amount">48 часов</dt>
             <dd class="slider-item-desc">Без подзарядки</dd>
           </dl>
         </li>
         <li class="slider-item">
-          <img src="" alt="Штатив для селфи" class="slider-item-photo">
+          <img class="slider-item-photo" src="" alt="Штатив для селфи.">
           <h3 class="slider-item-title">
             Делай селфи, как Бен Стиллер!
           </h3>
@@ -117,7 +115,7 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
             5 кг.
           </p>
-          <a href="#" class="slider-item-link">Подробнее</a>
+          <a class="slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-facts">
             <dt class="slider-item-amount">8,5 м</dt>
             <dd class="slider-item-desc">Длина палки</dd>
@@ -128,10 +126,27 @@
           </dl>
         </li>
       </ol>
+      <button class="slider-btn" type="button">
+        <span class="visually-hidden">Предыдущий слайд.</span>
+      </button>
+      <button class="slider-btn" type="button">
+        <span class="visually-hidden">Следующий слайд.</span>
+      </button>
+      <ul class="slider-controls">
+        <li class="slider-controls-item">
+          <span class="visually-hidden">Слайд.</span>
+        </li>
+        <li class="slider-controls-item slider-controls-item-active">
+          <span class="visually-hidden">Слайд.</span>
+        </li>
+        <li class="slider-controls-item">
+          <span class="visually-hidden">Слайд.</span>
+        </li>
+      </ul>
     </section>
 
     <section class="popular-categories">
-      <h2 class="visually-hidden">Популярные категории</h2>
+      <h2 class="visually-hidden">Популярные категории.</h2>
       <ul class="popular-categories-list">
         <li class="popular-categories-item">
           <a class="popular-categories-link" href="#">Виртуальная реальность</a>
@@ -155,16 +170,16 @@
     </section>
 
     <section class="services">
-      <h2 class="visually-hidden">Услуги</h2>
+      <h2 class="visually-hidden">Услуги.</h2>
       <ul class="services-navigation">
         <li class="services-navigation-item">
-          <a href="#" class="services-navigation-link">Доставка</a>
+          <a class="services-navigation-link" href="#">Доставка</a>
         </li>
         <li class="services-navigation-item">
-          <a href="#" class="services-link">Гарантия</a>
+          <a class="services-link" href="#">Гарантия</a>
         </li>
         <li class="services-navigation-item">
-          <a href="#" class="services-link">Кредит</a>
+          <a class="services-link" href="#">Кредит</a>
         </li>
       </ul>
       <ul class="services-list">
@@ -193,7 +208,7 @@
           </p>
         </li>
       </ul>
-      <a href="#" class="services-offer">
+      <a class="services-offer" href="#">
         Доставим редкий товар под заказ
       </a>
     </section>
@@ -246,7 +261,7 @@
       </p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="subscribe-input" type="email" name="subscribe-email" id="user-subscribe" placeholder="Ваш e-mail"
-          required>
+          aria-label="Поле подписки на рассылку." required>
         <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
       <span class="subscribe-slogan">Это бесплатно</span>
@@ -255,7 +270,7 @@
 
   <footer class="footer">
     <a class="logo footer-logo">
-      <img src="" alt="Логотип магазина">
+      <img src="" alt="Логотип магазина.">
     </a>
     <address>
       Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -271,21 +286,21 @@
         <a class="footer-navigation-link" href="#">Контакты</a>
       </li>
     </ul>
-    <a href="tel:+78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
+    <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
     <ul class="footer-social">
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Facebook</span>
+          <span class="visually-hidden">Facebook.</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
-          <span class="visually-hidden">Instagram</span>
+          <span class="visually-hidden">Instagram.</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="social-link" href="https://twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">Twitter</span>
+          <span class="visually-hidden">Twitter.</span>
         </a>
       </li>
     </ul>
@@ -293,12 +308,6 @@
       <span class="visually-hidden">HTML Academy</span>
     </a>
   </footer>
-
 </body>
 
 </html>
-
-Facebook — https://www.facebook.com/htmlacademy
-Instagram — https://www.instagram.com/htmlacademy/
-Twitter — https://twitter.com/htmlacademy_ru
-Логотип .html academy ведёт на главную страницу сайта разработчика — https://htmlacademy.ru/

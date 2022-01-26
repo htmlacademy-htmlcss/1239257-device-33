@@ -11,10 +11,11 @@
 <body>
   <header class="header">
     <a class="logo header-logo" href="index.html">
-      <img src="" alt="Логотип магазина">
+      <img src="" alt="Логотип магазина.">
     </a>
     <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-      <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="">
+      <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="user-search"
+        aria-label="Строка поиска.">
       <button class="header-search-btn" type="submit">Найти</button>
     </form>
     <ul class="header-usermenu">
@@ -36,9 +37,6 @@
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
           <a class="header-navigation-link" href="#">Каталог товаров</a>
-          <button class="header-navigation-btn" type="button">
-            <span class="visually-hidden">Показать категории</span>
-          </button>
           <ul class="header-submenu">
             <li class="header-submenu-item">
               <a class="header-submenu-link" href="#">Виртуальная реальность</a>
@@ -148,50 +146,52 @@
       </form>
     </section>
 
-    <section class="goods">
-      <h2 class="visually-hidden">Список товаров</h2>
-      <h3 class="goods-sort">Сортировка</h3>
-      <select class="goods-order">
-        <option value="popular">популярные</option>
-        <option value="discount">по скидкам</option>
+    <section class="sorting">
+      <h2 class="visually-hidden">Сортировка товаров.</h2>
+      <p class="sorting-subtitle">Сортировка:</p>
+      <select class="sorting-order">
+        <option value="popular" aria-label="Сначала популярные.">популярные</option>
+        <option value="discount" aria-label="Новые скидки.">по скидкам</option>
       </select>
-      <button class="goods-price" aria-label="Сначала дешевле"></button>
-      <button class="goods-price" aria-label="Сначала дороже"></button>
+      <button class="sorting-price" aria-label="Сначала дешевле."></button>
+      <button class="sorting-price" aria-label="Сначала дороже."></button>
+    </section>
+
+    <section class="goods">
+      <h2 class="visually-hidden">Список товаров.</h2>
       <ul class="goods-list">
         <li class="goods-list-item">
           <a class="goods-list-link" href="#">
-            <img class="goods-list-image" src="" alt="Любительская селфи-палка">
+            <img class="goods-list-image" src="" alt="Любительская селфи-палка.">
             <h3 class="goods-list-name">Любительская селфи-палка</h3>
             <span class="goods-list-price">500 ₽</span>
           </a>
         </li>
         <li class="goods-list-item">
           <a class="goods-list-link" href="#">
-            <img class="goods-list-image" src="" alt="Профессиональная селфи-палка">
+            <img class="goods-list-image" src="" alt="Профессиональная селфи-палка.">
             <h3 class="goods-list-name">Профессиональная селфи-палка</h3>
             <span class="goods-list-price">1500 ₽</span>
           </a>
         </li>
         <li class="goods-list-item">
           <a class="goods-list-link" href="#">
-            <img class="goods-list-image" src="" alt="Непотопляемая селфи-палка">
+            <img class="goods-list-image" src="" alt="Непотопляемая селфи-палка.">
             <h3 class="goods-list-name">Непотопляемая селфи-палка</h3>
             <span class="goods-list-price">2500 ₽</span>
           </a>
         </li>
         <li class="goods-list-item">
           <a class="goods-list-link" href="#">
-            <img class="goods-list-image" src="" alt="Селфи-палка «Следуй за мной»">
+            <img class="goods-list-image" src="" alt="Селфи-палка «Следуй за мной».">
             <h3 class="goods-list-name">Селфи-палка «Следуй за мной»</h3>
             <span class="goods-list-price">1500 ₽</span>
           </a>
         </li>
       </ul>
       <button class="goods-show-button" type="button">Загрузить ещЁ</button>
-      <ol class="goods-pagination">
-        <li class="goods-pagination-item">
-          <a class="goods-pagination-link" href="#">Назад</a>
-        </li>
+      <a class="goods-pagination-button" href="#">Назад</a>
+      <ul class="goods-pagination-list">
         <li class="goods-pagination-item">
           <a class="goods-pagination-link" href="#">1</a>
         </li>
@@ -203,21 +203,20 @@
         </li>
         <li class="goods-pagination-item">
           <a class="goods-pagination-link">...</a>
-          <span class="visually-hidden">Остальные страницы</span>
+          <span class="visually-hidden">Остальные страницы.</span>
         </li>
         <li class="goods-pagination-item">
           <a class="goods-pagination-link" href="#">15</a>
         </li>
-        <li class="goods-pagination-item">
-          <a class="goods-pagination-link" href="#">Вперёд</a>
-        </li>
-      </ol>
+      </ul>
+      <a class="goods-pagination-button" href="#">Вперёд</a>
+
     </section>
   </main>
 
   <footer class="footer">
     <a class="logo footer-logo" href="index.html">
-      <img src="" alt="Логотип магазина">
+      <img src="" alt="Логотип магазина.">
     </a>
     <address>
       Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -233,26 +232,26 @@
         <a class="footer-navigation-link" href="#">Контакты</a>
       </li>
     </ul>
-    <a href="tel:+78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
+    <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
     <ul class="footer-social">
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Facebook</span>
+          <span class="visually-hidden">Facebook.</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
-          <span class="visually-hidden">Instagram</span>
+          <span class="visually-hidden">Instagram.</span>
         </a>
       </li>
       <li class="footer-social-item">
         <a class="social-link" href="https://twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">Twitter</span>
+          <span class="visually-hidden">Twitter.</span>
         </a>
       </li>
     </ul>
     <a class="footer-dev-link" href="https://htmlacademy.ru">
-      <span class="visually-hidden">HTML Academy</span>
+      <span class="visually-hidden">HTML Academy.</span>
     </a>
   </footer>
 </body>
