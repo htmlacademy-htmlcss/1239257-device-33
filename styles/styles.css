@@ -137,6 +137,8 @@ body {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
+  background-color: #f0f0f0;
+  text-decoration: none;
 }
 
 /* about */
@@ -174,4 +176,50 @@ body {
 
 .contacts-phone {
   color: inherit;
+}
+
+/* subscribe */
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+.subscribe-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+
+
+/* footer */
+.footer {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.footer-address {
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+
+.footer-navigation-link {
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-social-link,
+.footer-dev-link {
+  color: #ffffff;
 }
