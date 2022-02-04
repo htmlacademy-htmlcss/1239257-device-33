@@ -48,17 +48,32 @@ body {
   background-color: #ffe17f;
 }
 
-.header-search-field,
-.header-search-btn {
-  font-family: "Rubik", sans-serif;
+.header-search-field {
   font-size: 16px;
   line-height: 20px;
+  background-color: transparent;
+}
+
+.header-search-field::placeholder {
+  color: #000000; 
+}
+
+.header-search-btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: transparent;
 }
 
 /* user navigation */
 .header-usermenu-link {
-   color: #000000;
+  color: inherit;
   text-decoration: none;
+}
+
+.header-usermenu-link-logout {
+  color: inherit;
+  opacity: 0.3;
 }
 
 .header-usermenu-count {
