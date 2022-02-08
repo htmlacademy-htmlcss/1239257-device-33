@@ -24,13 +24,17 @@
 }
 
 :root {
+  /* цвета */
   --black: #000000;
   --dark-gray: #444444;
   --light-gray: #f0f0f0;
   --yellow: #ffe17f;
+  /* цветовые схемы */
   --title-color: var(--black);
   --text-color: var(--dark-gray);
   --accent-color: var(--yellow);
+  /* шрифты */
+  --second-font: "Raleway";
 }
 
 body {
@@ -57,7 +61,7 @@ body {
 }
 
 .button {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -109,7 +113,7 @@ body {
 
 /* site navigation */
 .header-navigation-link {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   color: var(--title-color);
   line-height: 21px;
   letter-spacing: 3.6px;
@@ -127,7 +131,7 @@ body {
 /* index page */
 /* slider */
 .slider-item-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
@@ -144,7 +148,7 @@ body {
 }
 
 .popular-categories-link {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -154,7 +158,7 @@ body {
 
 /* services */
 .services-navigation-link {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   line-height: 21px;
   text-align: center;
   letter-spacing: 3.6px;
@@ -164,14 +168,14 @@ body {
 }
 
 .services-subtitle {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
 }
 
 .services-offer {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
@@ -184,7 +188,7 @@ body {
 
 /* about */
 .about-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
@@ -199,7 +203,7 @@ body {
 
 /* contacts */
 .contacts-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
@@ -225,7 +229,7 @@ body {
 }
 
 .subscribe-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
@@ -245,7 +249,7 @@ body {
 }
 
 .inner-header-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
@@ -264,7 +268,7 @@ body {
 }
 
 .products-filter-subtitle {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -279,7 +283,7 @@ body {
 
 /* sorting */
 .sorting-subtitle {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
@@ -309,7 +313,7 @@ body {
 }
 
 .goods-show-button {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 3.6px;
@@ -323,7 +327,7 @@ body {
 }
 
 .goods-pagination-button {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: inherit;
@@ -354,7 +358,7 @@ body {
 }
 
 .footer-navigation-link {
-  font-family: "Raleway", sans-serif;
+  font-family: "var(--second-font)", sans-serif;
   line-height: 21px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
