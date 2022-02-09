@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Девайс</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
       </li>
       <!-- Еще один пункт меню появляется после авторизации пользователя -->
       <!-- <li class="header-usermenu-item">
-        <a class="header-usermenu-link" href="#">Выйти</a>
+        <a class="header-usermenu-link-logout" href="#">Выйти</a>
       </li> -->
       <li class="header-usermenu-item">
         <a class="header-usermenu-link" href="#">Сравнить</a>
@@ -37,7 +38,7 @@
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
           <a class="header-navigation-link" href="catalog.html">Каталог товаров</a>
-          <ul class="header-submenu">
+          <ul class="header-submenu visually-hidden">
             <li class="header-submenu-item">
               <a class="header-submenu-link" href="#">Виртуальная реальность</a>
             </li>
@@ -71,7 +72,7 @@
     </nav>
   </header>
 
-  <main class="main-page">
+  <main class="main-page main-container">
     <h1 class="visually-hidden">Интернет-магазин Device.</h1>
 
     <section class="slider">
@@ -85,7 +86,7 @@
           <p class="slider-item-text">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="slider-item-link" href="#">Подробнее</a>
+          <a class="button slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-facts">
             <dt class="slider-item-amount">800 м</dt>
             <dd class="slider-item-desc">Дальность полета</dd>
@@ -102,7 +103,7 @@
           <p class="slider-item-text">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
-          <a class="slider-item-link" href="#">Подробнее</a>
+          <a class="button slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-facts">
             <dt class="slider-item-amount">48 часов</dt>
             <dd class="slider-item-desc">Без подзарядки</dd>
@@ -118,7 +119,7 @@
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
             5 кг.
           </p>
-          <a class="slider-item-link" href="#">Подробнее</a>
+          <a class="button slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-facts">
             <dt class="slider-item-amount">8,5 м</dt>
             <dd class="slider-item-desc">Длина палки</dd>
@@ -176,13 +177,13 @@
       <h2 class="visually-hidden">Услуги.</h2>
       <ul class="services-navigation">
         <li class="services-navigation-item">
-          <a class="services-navigation-link" href="#">Доставка</a>
+          <a class="services-navigation-link services-navigation-link-active" href="#">Доставка</a>
         </li>
         <li class="services-navigation-item">
-          <a class="services-link" href="#">Гарантия</a>
+          <a class="services-navigation-link" href="#">Гарантия</a>
         </li>
         <li class="services-navigation-item">
-          <a class="services-link" href="#">Кредит</a>
+          <a class="services-navigation-link" href="#">Кредит</a>
         </li>
       </ul>
       <ul class="services-list">
@@ -245,7 +246,7 @@
         Заодно сможете проверить работоспособность покупки.
       </p>
       <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-      <address class="contacts-text">
+      <address class="contacts-address">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </address>
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -265,7 +266,7 @@
       <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="subscribe-input" type="email" name="subscribe-email" id="user-subscribe" placeholder="Ваш e-mail"
           aria-label="Поле подписки на рассылку." required>
-        <button class="subscribe-button" type="submit">Подписаться</button>
+        <button class="button subscribe-button" type="submit">Подписаться</button>
       </form>
       <span class="subscribe-slogan">Это бесплатно</span>
     </section>
@@ -275,7 +276,7 @@
     <a class="logo footer-logo">
       <img src="images/logo-yellow.svg" alt="Логотип магазина." width="145" height="36">
     </a>
-    <address>
+    <address class="footer-address">
       Санкт-Петербург, набережная реки Карповки, 5, литера П.
     </address>
     <ul class="footer-navigation">
@@ -302,7 +303,7 @@
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+        <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
           <span class="visually-hidden">Twitter.</span>
         </a>
       </li>

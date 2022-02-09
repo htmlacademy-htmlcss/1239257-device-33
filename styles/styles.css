@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik/rubik-400.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/rubik/rubik-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Raleway */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/raleway/raleway-800.woff2') format('woff2');
+  font-display: swap;
+}
+
+
+:root {
+  /* цвета */
+  --black: #000000;
+  --dark-gray: #444444;
+  --light-gray: #f0f0f0;
+  --yellow: #ffe17f;
+  /* цветовые схемы */
+  --title-color: var(--black);
+  --text-color: var(--dark-gray);
+  --accent-color: var(--yellow);
+  /* шрифты */
+  --second-font: "Raleway";
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: var(--second-font), sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
+
+.header-search-field {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+.header-search-field::placeholder {
+  color: var(--title-color); 
+}
+
+.header-search-btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* user navigation */
+.header-usermenu-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-usermenu-link-logout {
+  color: inherit;
+  opacity: 0.3;
+}
+
+.header-usermenu-count {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+/* site navigation */
+.header-navigation-link {
+  font-family: var(--second-font), sans-serif;
+  color: var(--title-color);
+  line-height: 21px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-submenu-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+
+
+/* index page */
+/* slider */
+.slider-item-title {
+  font-family: var(--second-font), sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+
+.slider-item-amount {
+  font-size: 36px;
+  line-height: 30px;
+  color: var(--title-color);
+}
+
+.slider-item-desc {
+  font-size: 16px;
+}
+
+.popular-categories-link {
+  font-family: var(--second-font), sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  letter-spacing: -0.36px;
+  color: var(--title-color);
+}
+
+/* services */
+.services-navigation-link {
+  font-family: var(--second-font), sans-serif;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.services-subtitle {
+  font-family: var(--second-font), sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+
+.services-offer {
+  font-family: var(--second-font), sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: var(--title-color);
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+/* about */
+.about-title {
+  font-family: var(--second-font), sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+
+.about-item {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+  color: var(--title-color);
+}
+
+/* contacts */
+.contacts-title {
+  font-family: var(--second-font), sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* subscribe */
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+.subscribe-title {
+  font-family: var(--second-font), sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+
+/* catalog */
+/* main */
+.main-inner {
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #f0f0f0;
+  color: var(--title-color);
+}
+
+.inner-header {
+  background-color: #ffffff;
+}
+
+.inner-header-title {
+  font-family: var(--second-font), sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* filter */
+.products-filter {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.products-filter-subtitle {
+  font-family: var(--second-font), sans-serif;
+  
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.products-filter-legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.36px; 
+}
+
+/* sorting */
+.sorting-subtitle {
+  font-family: var(--second-font), sans-serif;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.sorting-order {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* goods */
+.goods-list-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.goods-list-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.goods-list-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+
+.goods-show-button {
+  font-family: var(--second-font), sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* pagination */
+.goods-pagination {
+  background-color: #ebebeb;
+}
+
+.goods-pagination-button {
+  font-family: var(--second-font), sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.goods-pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+  opacity: 0.3;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: var(--text-color);
+  color: #ffffff;
+}
+
+.footer-address {
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+}
+
+.footer-navigation-link {
+  font-family: var(--second-font), sans-serif;
+  line-height: 21px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-phone {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-social-link,
+.footer-dev-link {
+  color: #ffffff;
+}

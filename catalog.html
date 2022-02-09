@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Каталог товаров | Девайс</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -87,10 +88,11 @@
     </header>
 
     <section class="products-filter">
-      <h2 class="visually-hidden">Фильтры</h2>
+      <h2 class="visually-hidden">Фильтры.</h2>
+      <p class="products-filter-subtitle">Фильтр:</p>
       <form class="products-filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="products-filter-group">
-          <legend class="products-filter-title">Цвет</legend>
+          <legend class="products-filter-legend">Цвет</legend>
           <ul class="products-filter-list">
             <li class="products-filter-item">
               <label class="control">
@@ -125,7 +127,7 @@
           </ul>
         </fieldset>
         <fieldset class="products-filter-group">
-          <legend class="products-filter-title">Bluetooth</legend>
+          <legend class="products-filter-legend">Bluetooth</legend>
           <ul class="products-filter-list">
             <li class="products-filter-item">
               <label class="control">
@@ -192,7 +194,11 @@
           </a>
         </li>
       </ul>
-      <button class="goods-show-button" type="button">Загрузить ещЁ</button>
+      <button class="goods-show-button" type="button">Загрузить ещё</button>
+    </section>
+
+    <section class="goods-pagination">
+      <h2 class="visually-hidden">Другие страницы с товарами.</h2>
       <a class="goods-pagination-button" href="#">Назад</a>
       <ul class="goods-pagination-list">
         <li class="goods-pagination-item">
@@ -248,7 +254,7 @@
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+        <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
           <span class="visually-hidden">Twitter.</span>
         </a>
       </li>
