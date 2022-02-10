@@ -278,17 +278,21 @@
 
     <section class="subscribe">
       <div class="subscribe-container">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">
-          Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-        </p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="subscribe-input" type="email" name="subscribe-email" id="user-subscribe"
-            placeholder="Ваш e-mail" aria-label="Поле подписки на рассылку." required>
-          <button class="button subscribe-button" type="submit">Подписаться</button>
-        </form>
-        <span class="subscribe-slogan">Это бесплатно</span>
+        <div class="subscribe-inner">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">
+            Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+          </p>
+        </div>
+        <div class="subscribe-form-wrapper">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="subscribe-input" type="email" name="subscribe-email" id="user-subscribe"
+              placeholder="Ваш e-mail" aria-label="Поле подписки на рассылку." required>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
+          </form>
+          <span class="subscribe-slogan">Это бесплатно</span>
+        </div>
       </div>
     </section>
   </main>
