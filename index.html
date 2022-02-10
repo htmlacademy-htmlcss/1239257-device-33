@@ -10,66 +10,70 @@
 
 <body>
   <header class="header">
-    <a class="logo header-logo">
-      <img src="images/logo-black.svg" alt="Логотип магазина." width="145" height="36">
-    </a>
-    <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-      <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="user-search"
-        aria-label="Строка поиска.">
-      <button class="header-search-btn" type="submit">Найти</button>
-    </form>
-    <ul class="header-usermenu">
-      <li class="header-usermenu-item">
-        <a class="header-usermenu-link" href="#">Войти</a>
-      </li>
-      <!-- Еще один пункт меню появляется после авторизации пользователя -->
-      <!-- <li class="header-usermenu-item">
-        <a class="header-usermenu-link-logout" href="#">Выйти</a>
-      </li> -->
-      <li class="header-usermenu-item">
-        <a class="header-usermenu-link" href="#">Сравнить</a>
-      </li>
-      <li class="header-usermenu-item">
-        <a class="header-usermenu-link" href="#">Корзина</a>
-        <span class="header-usermenu-count">2</span>
-      </li>
-    </ul>
-    <nav class="header-navigation">
-      <ul class="header-navigation-list">
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="catalog.html">Каталог товаров</a>
-          <ul class="header-submenu visually-hidden">
-            <li class="header-submenu-item">
-              <a class="header-submenu-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="header-submenu-item">
-              <a class="header-submenu-link" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="header-submenu-item">
-              <a class="header-submenu-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="header-submenu-item">
-              <a class="header-submenu-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="header-submenu-item">
-              <a class="header-submenu-link" href="#">Умные часы</a>
-            </li>
-            <li class="header-submenu-item">
-              <a class="header-submenu-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <a class="logo header-logo">
+        <img src="images/logo-black.svg" alt="Логотип магазина." width="145" height="36">
+      </a>
+      <div class="header-inner">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+          <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="user-search"
+            aria-label="Строка поиска.">
+          <button class="header-search-btn" type="submit">Найти</button>
+        </form>
+        <ul class="header-usermenu">
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link" href="#">Войти</a>
+          </li>
+          <!-- Еще один пункт меню появляется после авторизации пользователя -->
+          <!-- <li class="header-usermenu-item">
+          <a class="header-usermenu-link-logout" href="#">Выйти</a>
+        </li> -->
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link" href="#">Сравнить</a>
+          </li>
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link" href="#">Корзина</a>
+            <span class="header-usermenu-count">2</span>
+          </li>
+        </ul>
+      </div>
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="catalog.html">Каталог товаров</a>
+            <ul class="header-submenu visually-hidden">
+              <li class="header-submenu-item">
+                <a class="header-submenu-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="header-submenu-item">
+                <a class="header-submenu-link" href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="header-submenu-item">
+                <a class="header-submenu-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="header-submenu-item">
+                <a class="header-submenu-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="header-submenu-item">
+                <a class="header-submenu-link" href="#">Умные часы</a>
+              </li>
+              <li class="header-submenu-item">
+                <a class="header-submenu-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main-page main-container">
