@@ -23,6 +23,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -43,7 +49,6 @@ html {
 
 body {
   margin: 0;
-  box-sizing: border-box;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -52,6 +57,11 @@ body {
   line-height: 30px;
   color: var(--text-color);
   background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -68,6 +78,8 @@ body {
 }
 
 .button {
+  display: inline-block;
+  padding: 10px 6px;
   font-family: var(--second-font), sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -165,7 +177,30 @@ body {
 }
 
 /* index page */
+.main-page-inner {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /* slider */
+.slider-gallery {
+  margin: 0;
+  padding-left: 0;
+}
+
+.slider-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-item-description {
+  width: 560px;
+}
+
 .slider-item-title {
   font-family: var(--second-font), sans-serif;
   font-size: 50px;
@@ -183,7 +218,38 @@ body {
   font-size: 16px;
 }
 
+/* временно скрыты */
+.slider-btn {
+  display: none;
+}
+
+.slider-controls {
+  display: none;
+}
+/* --- */
+
+
+/* popular categories */
+.popular-categories-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.popular-categories-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-categories-item {
+  width: 160px;
+  padding-top: 160px; /* место для картинки */
+}
+
 .popular-categories-link {
+  padding-top: 32px;
   font-family: var(--second-font), sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -193,6 +259,26 @@ body {
 }
 
 /* services */
+
+.services-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.services-inner {
+  margin-bottom: 70px;
+  padding-bottom: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.services-navigation {
+  width: 280px;
+  margin: 0;
+  padding-left: 0;
+}
+
 .services-navigation-link {
   font-family: var(--second-font), sans-serif;
   line-height: 21px;
@@ -203,7 +289,27 @@ body {
   text-decoration: none;
 }
 
+.services-list {
+  margin: 0;
+  padding: 0;
+  border-left: 7px solid var(--black);
+}
+
+.services-item {
+  width: 810px;
+  padding: 72.5px 0;
+  padding-left: 116px;
+  padding-right: 242px;
+}
+
+/* временно скрыты */
+.services-item:not(:first-child) {
+  display: none;
+}
+
 .services-subtitle {
+  margin-top: 0;
+  margin-bottom: 34px;
   font-family: var(--second-font), sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -211,6 +317,9 @@ body {
 }
 
 .services-offer {
+  display: block;
+  width: 100%;
+  padding: 40px 125px;
   font-family: var(--second-font), sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -222,23 +331,57 @@ body {
   text-decoration: none;
 }
 
+.services-description {
+  margin-bottom: 0;
+}
+
 /* about */
+.about {
+  width: 520px;
+  padding-right: 23px;
+}
+
 .about-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-top: 47px; /* для декоративной плашки */
   font-family: var(--second-font), sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
 }
 
+.about-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about-list {
+  margin: 30px 0;
+  padding-left: 36px;
+}
+
 .about-item {
+  margin-bottom: 19px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
   color: var(--title-color);
 }
 
+.about-item:last-child {
+  margin-bottom: 0;
+}
+
 /* contacts */
+.contacts {
+  width: 532px;
+}
+
 .contacts-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-top: 47px;
   font-family: var(--second-font), sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -246,9 +389,16 @@ body {
 }
 
 .contacts-subtitle {
+  margin-top: 0;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.contacts-text {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-address {
@@ -256,6 +406,8 @@ body {
 }
 
 .contacts-phone {
+  display: inline-block;
+  margin-bottom: 30px;
   color: inherit;
 }
 
@@ -264,11 +416,23 @@ body {
   background-color: #f0f0f0;
 }
 
+.subscribe-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
 .subscribe-title {
+  margin-top: 0;
   font-family: var(--second-font), sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: var(--title-color);
+}
+
+.subscribe-description {
+  margin-top: 0;
 }
 
 /* catalog */
@@ -387,10 +551,33 @@ body {
   color: #ffffff;
 }
 
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 62px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contacts {
+  width: 239px;
+  margin-right: 112px;
+}
+
 .footer-address {
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
+}
+
+.footer-menu {
+  width: 444px;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid white;
 }
 
 .footer-navigation-link {
@@ -411,4 +598,9 @@ body {
 .footer-social-link,
 .footer-dev-link {
   color: #ffffff;
+}
+
+.footer-connect {
+  width: 174px;
+  margin-left: auto;
 }
