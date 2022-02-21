@@ -25,9 +25,9 @@
             <a class="header-usermenu-link" href="#">Войти</a>
           </li>
           <!-- Еще один пункт меню появляется после авторизации пользователя -->
-          <!-- <li class="header-usermenu-item">
-          <a class="header-usermenu-link-logout" href="#">Выйти</a>
-        </li> -->
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link header-usermenu-link-logout" href="#">Выйти</a>
+          </li>
           <li class="header-usermenu-item">
             <a class="header-usermenu-link" href="#">Сравнить</a>
           </li>
@@ -94,10 +94,14 @@
               </p>
               <a class="button slider-item-link" href="#">Подробнее</a>
               <dl class="slider-item-facts">
-                <dt class="slider-item-amount">800 м</dt>
-                <dd class="slider-item-desc">Дальность полета</dd>
-                <dt class="slider-item-amount">50 м</dt>
-                <dd class="slider-item-desc">Радиус поражения</dd>
+                <div class="slider-item-col">
+                  <dt class="slider-item-amount">800 м</dt>
+                  <dd class="slider-item-desc">Дальность полета</dd>
+                </div>
+                <div class="slider-item-col">
+                  <dt class="slider-item-amount">50 м</dt>
+                  <dd class="slider-item-desc">Радиус поражения</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -115,8 +119,10 @@
               </p>
               <a class="button slider-item-link" href="#">Подробнее</a>
               <dl class="slider-item-facts">
-                <dt class="slider-item-amount">48 часов</dt>
-                <dd class="slider-item-desc">Без подзарядки</dd>
+                <div class="slider-item-col">
+                  <dt class="slider-item-amount">48 часов</dt>
+                  <dd class="slider-item-desc">Без подзарядки</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -136,12 +142,21 @@
               </p>
               <a class="button slider-item-link" href="#">Подробнее</a>
               <dl class="slider-item-facts">
-                <dt class="slider-item-amount">8,5 м</dt>
-                <dd class="slider-item-desc">Длина палки</dd>
-                <dt class="slider-item-amount">5 кг</dt>
-                <dd class="slider-item-desc">Вес палки</dd>
-                <dt class="slider-item-amount">Карбон</dt>
-                <dd class="slider-item-desc">Материал</dd>
+                <div class="slider-item-col">
+                  <dt class="slider-item-amount">8,5 м</dt>
+                  <dd class="slider-item-desc">Длина палки</dd>
+                </div>
+
+                <div class="slider-item-col">
+                  <dt class="slider-item-amount">5 кг</dt>
+                  <dd class="slider-item-desc">Вес палки</dd>
+                </div>
+
+                <div class="slider-item-col">
+                  <dt class="slider-item-amount">Карбон</dt>
+                  <dd class="slider-item-desc">Материал</dd>
+                </div>
+
               </dl>
             </div>
           </div>
