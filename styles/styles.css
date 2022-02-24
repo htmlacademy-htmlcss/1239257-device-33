@@ -589,6 +589,7 @@ img {
 
 .main-inner-container {
   display: flex;
+  padding-bottom: 0;
 }
 
 .inner-header {
@@ -698,7 +699,12 @@ img {
 }
 
 .goods-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
   margin: 0;
+  margin-bottom: 44px;
   padding: 0;
   list-style-type: none;
 }
