@@ -14,27 +14,29 @@
       <a class="logo header-logo" href="index.html">
         <img src="images/logo-black.svg" alt="Логотип магазина." width="145" height="36">
       </a>
-      <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-        <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="user-search"
-          aria-label="Строка поиска.">
-        <button class="header-search-btn" type="submit">Найти</button>
-      </form>
-      <ul class="header-usermenu">
-        <li class="header-usermenu-item">
-          <a class="header-usermenu-link" href="#">Коля Петухов</a>
-        </li>
-        <li class="header-usermenu-item">
-          <a class="header-usermenu-link header-usermenu-link-logout" href="#">Выйти</a>
-        </li>
-        <li class="header-usermenu-item">
-          <a class="header-usermenu-link" href="#">Сравнить</a>
-        </li>
-        <li class="header-usermenu-item">
-          <a class="header-usermenu-link" href="#">Корзина</a>
-          <span class="header-usermenu-count">2</span>
-        </li>
-      </ul>
-      <nav class="header-navigation">
+      <div class="header-inner">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+          <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска" id="user-search"
+            aria-label="Строка поиска.">
+          <button class="header-search-btn" type="submit">Найти</button>
+        </form>
+        <ul class="header-usermenu">
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link" href="#">Коля Петухов</a>
+          </li>
+          <li class="">
+            <a class="header-usermenu-link header-usermenu-link-logout" href="#">Выйти</a>
+          </li>
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link" href="#">Сравнить</a>
+          </li>
+          <li class="header-usermenu-item">
+            <a class="header-usermenu-link" href="#">Корзина</a>
+            <span class="header-usermenu-count">2</span>
+          </li>
+        </ul>
+      </div>
+      <nav class="header-navigation header-navigation-page">
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
             <a class="header-navigation-link" href="#">Каталог товаров</a>
@@ -154,14 +156,18 @@
 
       <div class="main-inner-content">
         <section class="sorting">
-          <h2 class="visually-hidden">Сортировка товаров.</h2>
-          <p class="sorting-subtitle">Сортировка:</p>
-          <select class="sorting-order" aria-label="В каком порядке показывать товары.">
-            <option value="popular">популярные</option>
-            <option value="discount">по скидкам</option>
-          </select>
-          <button class="sorting-price" aria-label="Сначала дешевле."></button>
-          <button class="sorting-price" aria-label="Сначала дороже."></button>
+          <div class="sorting-container">
+            <h2 class="visually-hidden">Сортировка товаров.</h2>
+            <p class="sorting-subtitle">Сортировка:</p>
+            <select class="sorting-order" aria-label="В каком порядке показывать товары.">
+              <option value="popular">популярные</option>
+              <option value="discount">по скидкам</option>
+            </select>
+            <div class="sorting-inner">
+              <button class="sorting-price" type="button" aria-label="Сначала дешевле."></button>
+              <button class="sorting-price" type="button" aria-label="Сначала дороже."></button>
+            </div>
+          </div>
         </section>
 
         <section class="goods">
