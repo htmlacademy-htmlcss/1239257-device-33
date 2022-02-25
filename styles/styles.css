@@ -176,7 +176,7 @@ img {
 
 .header-usermenu-link {
   display: block;
-  padding: 5px;
+  padding: 5px 0;
   padding-left: 26px;
   color: inherit;
   text-decoration: none;
@@ -709,13 +709,23 @@ img {
   list-style-type: none;
 }
 
-.goods-list-link {
+.goods-list-preview {
   display: block;
+  width: 360px;
+  height: 380px;
+}
+
+.goods-list-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
   color: inherit;
   text-decoration: none;
 }
 
 .goods-list-name {
+  max-width: 226px;
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -726,6 +736,11 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: var(--text-color);
+}
+
+.goods-list-image {
+  width: 360px;
+  height: auto;
 }
 
 .goods-show-button {
@@ -901,4 +916,5 @@ img {
   width: 115px;
   height: 33px;
   outline: 1px solid var(--white);
-}
+} 
+
