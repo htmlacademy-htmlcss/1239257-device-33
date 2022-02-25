@@ -713,12 +713,13 @@ img {
   display: block;
   width: 360px;
   height: 380px;
+  margin-bottom: 32px;
 }
 
 .goods-list-info {
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
+  
   color: inherit;
   text-decoration: none;
 }
@@ -741,6 +742,7 @@ img {
 .goods-list-image {
   width: 360px;
   height: auto;
+  object-fit: cover;
 }
 
 .goods-show-button {
