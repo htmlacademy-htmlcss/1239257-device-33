@@ -145,6 +145,28 @@ img {
   margin-bottom: 30px;
 }
 
+.logo {
+  transition-property: opacity;
+  transition-duration: 400ms;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.logo:focus {
+  outline: var(--outline-style);
+}
+
+.logo img {
+  width: 145px;
+  height: 36px;
+}
+
 .header-logo {
   display: inline-block;
   width: auto;
@@ -152,25 +174,6 @@ img {
   position: absolute;
   top: -23px;
   left: 0;
-  transition-property: opacity;
-  transition-duration: 400ms;
-}
-
-.header-logo:hover {
-  opacity: 0.6;
-}
-
-.header-logo:active {
-  opacity: 0.3;
-}
-
-.header-logo:focus {
-  outline: var(--outline-style);
-}
-
-.header-logo img {
-  width: 145px;
-  height: 36px;
 }
 
 .header-search {
@@ -279,9 +282,9 @@ img {
   opacity: 0.3;
 }
 
-/* .header-usermenu-link:focus {
+.header-usermenu-link:focus {
   outline: var(--outline-style);
-} */
+}
 
 .header-usermenu-icon {
   fill: var(--black);
@@ -729,6 +732,60 @@ img {
   color: var(--title-color);
   background-color: var(--light-gray);
   text-decoration: none;
+  transition: all 400ms;
+  position: relative;
+}
+
+.services-offer::before {
+  position: absolute;
+  content: '';
+  width: 125px;
+  height: 103px;
+  top: 0;
+  left: 0;
+  background: url('../images/icons/car.svg') center center no-repeat;
+  background-size: 47px 31px;
+  background-color: var(--accent-color);
+  transition-property: opacity background-color;
+  transition-duration: .5s;
+} 
+
+.services-offer:hover.services-offer::before {
+  background-color: var(--dark-yellow);
+}
+
+.services-offer:active {
+  opacity: 0.3;
+}
+
+.services-offer:focus {
+  outline: var(--outline-style);
+  outline-offset: 2px;
+}
+
+.services-offer-decor {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: var(--gray-border);
+}
+
+.services-offer-icon {
+  fill: var(--title-color);
+  opacity: 0.3;
+  transition-property: opacity;
+  transition-duration: .5s;
+}
+
+.services-offer:hover .services-offer-icon {
+  opacity: 1;
 }
 
 .services-description {
@@ -1203,20 +1260,6 @@ img {
 .footer-logo {
   display: inline-block;
   margin-bottom: 35px;
-  transition-property: opacity;
-  transition-duration: 300ms;
-}
-
-.footer-logo:hover {
-  opacity: 0.6;
-}
-
-.footer-logo:active {
-  opacity: 0.3;
-}
-
-.footer-logo:focus {
-  outline: var(--outline-style);
 }
 
 .footer-address {
