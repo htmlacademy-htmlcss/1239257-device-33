@@ -326,10 +326,31 @@ img {
   margin-right: 47px;
 }
 
- .header-navigation-show {
+.header-navigation-show {
   margin-right: auto;
   padding-right: 70px;
+  background: url('../images/icons/show.svg') right center no-repeat;
+  background-size: contain;
+  cursor: pointer;
   position: relative;
+}
+
+.header-navigation-show::after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 2px;
+  top: 24px;
+  right: 16px;
+  background-color: var(--title-color);
+  opacity: 0.3;
+  transform: rotate(90deg);
+  transition-property: transform;
+  transition-duration: .5s;
+}
+
+.header-navigation-show:hover.header-navigation-show::after {
+  transform: rotate(180deg);
 }
 
 .header-navigation-item:last-child {
