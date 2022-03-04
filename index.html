@@ -51,7 +51,7 @@
             </a>
           </li>
           <li class="header-usermenu-item">
-            <a class="header-usermenu-link" href="#">
+            <a class="header-usermenu-link header-usermenu-link-cart" href="#">
               <svg class="header-usermenu-cart" aria-hidden="true" focusable="false" width="16" height="15"
                 xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -89,7 +89,7 @@
             </ul>
           </li>
           <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Доставка</a>
+            <a class="header-navigation-link header-navigation-link-current" href="#">Доставка</a>
           </li>
           <li class="header-navigation-item">
             <a class="header-navigation-link" href="#">Гарантия</a>
@@ -378,7 +378,7 @@
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-text">
-          Вы можете забрать товар сами, заехав в наш офис.
+          Вы можете забрать товар сами, заехав в наш офис.<br>
           Заодно сможете проверить работоспособность покупки.
         </p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -416,16 +416,14 @@
   </main>
 
   <footer class="footer">
-    <div class="wrapper footer-container">
-      <div class="footer-contacts">
-        <a class="logo footer-logo">
-          <img src="images/logo-yellow.svg" alt="Логотип магазина." width="145" height="36">
-        </a>
+    <div class="wrapper footer-wrapper">
+      <a class="logo footer-logo">
+        <img src="images/logo-yellow.svg" alt="Логотип магазина." width="145" height="36">
+      </a>
+      <div class="footer-inner">
         <address class="footer-address">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
-      </div>
-      <div class="footer-menu">
         <ul class="footer-navigation">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link" href="#">Доставка</a>
@@ -437,6 +435,9 @@
             <a class="footer-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      </div>
+      <div class="footer-contact">
         <ul class="footer-social">
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
@@ -469,9 +470,6 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="footer-connect">
-        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="footer-dev-link" href="https://htmlacademy.ru">
           <svg class="footer-dev-logo" width="115" height="33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path
