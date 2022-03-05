@@ -123,7 +123,7 @@ img {
 
 .button-decorated:focus {
   outline: var(--outline-style);
-  outline-offset: -1px;
+  /* outline-offset: -1px; */
 }
 
 /* header */
@@ -170,7 +170,8 @@ img {
 
 .header-logo {
   display: inline-block;
-  width: auto;
+  width: 145px;
+  height: 36px;
   margin-left: 60px;
   position: absolute;
   top: -23px;
@@ -183,15 +184,23 @@ img {
   position: relative;
 }
 
-.header-search-field {
+
+.header-search-field-inner {
+  height: 40px;
   flex-grow: 1;
+  border: 2px solid var(--title-color);
+  border-radius: 50px 0px 0px 50px; 
+}
+
+.header-search-field {
+  width: 100%;
   padding: 8px;
   padding-left: 48px;
-  border: 2px solid var(--title-color);
-  border-radius: 50px 0px 0px 50px;
+  border: none;
   font-family: var(--main-font), sans-serif;
   font-size: 16px;
   line-height: 20px;
+  background: url('../images/icons/search.svg') 16px 10px no-repeat;
   background-color: transparent;
 }
 
@@ -200,12 +209,28 @@ img {
   opacity: 0.3;
 }
 
-.header-search-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  fill: var(--black);
+.header-search-field:focus {
+  outline: var(--outline-style);
+  outline-offset: 3px;
+}
+
+.header-search-btn-inner {
+  width: 160px;
+  height: 40px;
+  border: 2px solid var(--title-color);
+  border-radius: 0 50px 50px 0;
+  border-left: none;
+  text-align: center;
+   transition-property: background-color;
+  transition-duration: 0.4s;
+}
+
+.header-search-btn-inner:hover {
+  background-color: var(--title-color);
+}
+
+.header-search-btn-inner:active {
+   background-color: var(--title-color);
 }
 
 .header-search-btn {
@@ -216,29 +241,22 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  border: 2px solid var(--title-color);
-  border-radius: 0 50px 50px 0;
-  border-left: none;
+  border: none;
   background-color: transparent;
   cursor: pointer;
-  transition-property: color background-color;
-  transition-duration: 0.5s;
 }
 
 .header-search-btn:hover {
   color: var(--white);
-  background-color: var(--title-color);
 }
 
 .header-search-btn:active {
   color: var(--dark-gray);
-  background-color: var(--title-color);
 }
 
-.header-search-field:focus,
 .header-search-btn:focus {
   outline: var(--outline-style);
-  outline-offset: var(--outline-offset);
+  outline-offset: 3px;
 }
 
 .header-search-field:disabled,
@@ -815,7 +833,7 @@ img {
   display: block;
   width: 100%;
   padding: 37px 125px;
-  padding-top: 41px;
+  padding-top: 40px;
   font-family: var(--second-font), sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -862,8 +880,8 @@ img {
   height: 40px;
   position: absolute;
   top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
+  right: 43px;
+  transform: translateY(-21px);
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -1311,18 +1329,48 @@ img {
 .goods-list-preview {
   display: block;
   width: 360px;
-  min-height: 380px;
   color: inherit;
   text-decoration: none;
+  position: relative;
 }
 
-.goods-list-preview:hover {
-  color: var(--text-color);
+.goods-list-preview::after {
+  position: absolute;
+  content: '';
+  width: 360px;
+  height: 380px;
+  top: 0;
+  left: 0;
+  background-color: var(--light-gray);
   opacity: 0.8;
+  display: none;
+}
+
+.goods-list-overlay {
+  position: absolute;
+  width: 220px;
+  height: 40px;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: none;
+}
+
+.goods-list-preview:hover  {
+  color: rgba(68, 68, 68, 0.8);
+}
+
+.goods-list-preview:hover::after  {
+  display: block;
+}
+
+.goods-list-preview:hover .goods-list-overlay {
+  display: block;
 }
 
 .goods-list-preview:active {
-  
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .goods-list-preview:focus {
@@ -1334,7 +1382,7 @@ img {
   position: relative;
 }
 
-.goods-list-new::after {
+.goods-list-new::before {
   position: absolute;
   content: '';
   width: 60px;
@@ -1369,6 +1417,14 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: var(--text-color);
+}
+
+.goods-list-preview:hover .goods-list-price {
+  color: rgba(68, 68, 68, 0.8);
+}
+
+.goods-list-preview:active .goods-list-price {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .goods-list-image {
