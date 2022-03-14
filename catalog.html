@@ -127,6 +127,33 @@
         <p class="products-filter-subtitle">Фильтр:</p>
         <form class="products-filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="products-filter-group">
+            <legend class="products-filter-legend">Стоимость</legend>
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="width: 119px;">
+                  <button class="range-toggle range-toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                    <span class="range-toggle-decorator"></span>
+                  </button>
+                  <button class="range-toggle range-toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                    <span class="range-toggle-decorator"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="range-wrapper">
+              <div class="range-count">
+                <label class="range-label">от</label>
+                <input class="range-input" type="number" value="0" name="min-price">
+              </div>
+              <label class="range-label">
+                до
+                <input class="range-input" type="number" value="5000" name="max-price">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="products-filter-group">
             <legend class="products-filter-legend">Цвет</legend>
             <ul class="products-filter-list">
               <li class="products-filter-item">
