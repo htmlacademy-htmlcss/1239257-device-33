@@ -1881,12 +1881,14 @@ img {
 
 .delivery-form-label {
   display: block;
+  position: relative;
   margin-bottom: 14px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.36px;
   color: var(--title-color);
+  word-wrap: break-word;
 }
 
 .delivery-form-text {
@@ -1937,6 +1939,67 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.delivery-form-label-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tooltip {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-top: -3px;
+  margin-left: 8px;
+  position: relative;
+}
+
+.tooltip::after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 6px;
+  top: 30px;
+  left: 6px;
+  background: url('../images/icons/tooltip-decor.svg') center center no-repeat;
+  display: none;
+}
+
+.tooltip:hover::after,
+.tooltip:hover .tooltip-text {
+  display: block;
+}
+
+.tooltip-button {
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tooltip-button:hover,
+.tooltip-button:focus {
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
+}
+
+.tooltip-text {
+  display: block;
+  position: absolute;
+  width: 200px;
+  top: 36px;
+  right: -34px;
+  padding: 19px;
+  padding-right: 17px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+  background-color: var(--title-color);
+  z-index: 5;
+  display: none;
+}
 
 .delivery-form-buttons {
   width: 180px;
