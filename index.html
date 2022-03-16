@@ -38,7 +38,7 @@
             </a>
           </li>
           <!-- Еще один пункт меню появляется после авторизации пользователя -->
-          <!-- <li class="">
+          <!-- <li>
             <a class="header-usermenu-link header-usermenu-link-logout" href="#">Выйти</a>
           </li> -->
           <li class="header-usermenu-item">
@@ -51,7 +51,7 @@
               Сравнить
             </a>
           </li>
-          <li class="header-usermenu-item">
+          <li class="header-usermenu-item header-usermenu-item-cart">
             <a class="header-usermenu-link header-usermenu-link-cart" href="#">
               <span class="header-usermenu-count">2</span>
               <svg class="header-usermenu-cart" aria-hidden="true" focusable="false" width="16" height="15"
@@ -61,6 +61,46 @@
               </svg>
               Корзина
             </a>
+            <div class="popover-cart popover-closed">
+              <div class="popover-cart-content">
+                <h2 class="popover-title visually-hidden">
+                  Посмотреть товары в корзине.
+                </h2>
+                <ul class="popover-cart-list">
+                  <li class="popover-cart-item">
+                    <a class="popover-cart-preview" href="#">
+                      <img class="popover-cart-image" src="images/products/product-1.jpg"
+                        alt="Любительская селфи-палка.">
+                      <span class="popover-cart-name">Любительская селфи-палка</span>
+                    </a>
+                    <button class="popover-cart-remove" type="button">
+                      <span class="visually-hidden">Удалить товар.</span>
+                    </button>
+                  </li>
+                  <li class="popover-cart-item">
+                    <a class="popover-cart-preview" href="#">
+                      <img class="popover-cart-image" src="images/products/product-2.jpg"
+                        alt="Профессиональная селфи-палка.">
+                      <span class="popover-cart-name">Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="popover-cart-remove" type="button">
+                      <span class="visually-hidden">Удалить товар.</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-cart-resume">
+                  <p>
+                    <span>Товаров: </span><span class="popover-cart-count">2</span>
+                  </p>
+                  <p>
+                    <span>Сумма: </span><span class="popover-cart-price">2000 ₽</span>
+                  </p>
+                </div>
+                <div class="popover-cart-inner">
+                  <a class="button popover-cart-button" href="#">Открыть корзину</a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

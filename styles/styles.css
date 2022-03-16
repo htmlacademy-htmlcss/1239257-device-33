@@ -36,6 +36,7 @@ html {
 :root {
   /* цвета */
   --black: #000000;
+  --black-special: #1a1a1a;
   --dark-gray: #444444;
   --gray-border: #dcdcdc;
   --gray: #ebebeb;
@@ -327,6 +328,10 @@ img {
   margin-right: auto;
 }
 
+.header-usermenu-item-cart {
+  position: relative;
+}
+
 .header-usermenu-link {
   display: block;
   padding-left: 26px;
@@ -390,6 +395,153 @@ img {
   font-size: 14px;
   line-height: 17px;
   z-index: 5;
+}
+
+/* класс, скрывающий поповер */
+.popover-closed {
+  display: none;
+}
+
+/* popover-cart */
+.popover-cart {
+  position: absolute;
+  width: 320px;
+  min-height: 90px;
+  top: 36px;
+  right: -77px;
+  color: var(--white);
+  background-color: var(--title-color);
+  z-index: 5;
+}
+
+.popover-cart-content {
+  position: relative;
+}
+
+.popover-cart-content::after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-7px);
+  background: url('../images/icons/tooltip-decor.svg') center center no-repeat;
+}
+
+.popover-cart-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popover-cart-item {
+  position: relative;
+  padding: 20px;
+  padding-right: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.popover-cart-preview {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  transition-property: opacity;
+  transition-duration: .4s;
+}
+
+.popover-cart-preview:hover {
+  opacity: 0.6;
+}
+
+.popover-cart-preview:active {
+  opacity: 0.3;
+}
+
+.popover-cart-preview:focus {
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
+}
+
+.popover-cart-image {
+  display: block;
+  width: 39px;
+  height: 43px;
+  margin-right: 23px;
+  
+  object-fit: contain;
+}
+
+.popover-cart-name {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover-cart-remove {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  background: url('../images/icons/remove-item.svg') center center no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popover-cart-remove:hover {
+  opacity: 0.6;
+}
+
+.popover-cart-remove:active {
+  opacity: 0.3;
+}
+
+.popover-cart-remove:focus {
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
+}
+
+.popover-cart-resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 20px;
+  background-color: var(--black-special);
+}
+
+.popover-cart-inner {
+  padding: 20px;
+}
+
+.popover-cart-button {
+  display: block;
+  padding: 14px 20px;
+  background-color: var(--white);
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+.popover-cart-button:hover {
+  background-color: var(--accent-color);
+}
+
+.popover-cart-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popover-cart-button:focus {
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
+}
+
+.popover-cart-button:disabled {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* site navigation */
@@ -1257,6 +1409,10 @@ img {
 .subscribe-input {
   flex-grow: 1;
   padding: 11px 16px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-color);
   border: none;
   border-bottom: 3px solid var(--gray-border);
   background-color: transparent;
@@ -1265,12 +1421,23 @@ img {
 .subscribe-input::placeholder {
   font-size: 18px;
   line-height: 30px;
-  color: var(--text-color);
+  color: rgba(68, 68, 68, 0.5);
   opacity: 0.5;
+}
+
+.subscribe-input:focus {
+  background-color: var(--gray-border);
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
 }
 
 .subscribe-input:disabled {
   opacity: 0.3;
+}
+
+/* класс добавляется, когда поле заполнено неверно */
+.subscribe-input-invalid {
+  border-bottom: 3px solid var(--error);
 }
 
 .subscribe-button {
@@ -1291,7 +1458,6 @@ img {
   opacity: 0.3;
 }
 
-.subscribe-input:focus,
 .subscribe-button:focus {
   outline: var(--outline-style);
   outline-offset: var(--outline-offset);
