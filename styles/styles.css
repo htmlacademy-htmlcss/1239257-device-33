@@ -1635,7 +1635,7 @@ img {
 
 .range-count {
   position: absolute;
-  width: 30px;
+  min-width: 30px;
   height: 18px;
   top: 0;
   left: -11px;
@@ -1647,7 +1647,7 @@ img {
 
 .range-label {
   position: absolute;
-  width: 15px;
+  width: 50px;
   height: 18px;
   top: 0;
   left: 0;
@@ -1667,6 +1667,10 @@ img {
   background-color: transparent;
 }
 
+.range-input-end {
+  width: 60px;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1675,7 +1679,6 @@ img {
 
 .range-input:focus {
   outline: var(--outline-style);
-  outline-offset: var(--outline-offset);
 }
 
 /* filter */
