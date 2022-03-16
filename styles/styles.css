@@ -1686,6 +1686,24 @@ img {
   line-height: 19px;
 }
 
+.products-filter-group {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.products-filter-group::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  top: -53px;
+  left: 0;
+  background-color: var(--title-color);
+}
+
 .products-filter-subtitle {
   margin-top: 0;
   margin-bottom: 58px;
@@ -1695,20 +1713,106 @@ img {
 }
 
 .products-filter-legend {
+  padding-top: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.36px; 
 }
 
+.products-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products-filter-item {
+  margin-bottom: 17px;
+}
+
+.products-filter-item:last-child {
+  margin-bottom: 0;
+}
+
 .products-filter-button {
   width: 100%;
-  margin-top: 35px;
 }
 
 .products-filter-button:disabled {
   opacity: 0.3;
 }
+
+/* controls */
+.control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--gray-border);
+  border-radius: 3px;
+}
+
+.control-input:focus + .control-mark {
+  opacity: 1;
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
+}
+
+.control-input:disabled + .control-label {
+  opacity: 0.1;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  border-color: var(--title-color);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 3px;
+  left: 3px;
+  background: url('../images/icons/checked-black.svg') center center no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border-color: var(--title-color);
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  top: 4px;
+  left: 4px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
 
 .main-inner-content {
   width: 840px;
