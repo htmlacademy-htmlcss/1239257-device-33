@@ -1788,8 +1788,16 @@ img {
 
 .control-input:focus + .control-mark {
   opacity: 1;
-  outline: var(--outline-style);
-  outline-offset: var(--outline-offset);
+}
+
+.control-input:focus + .control-mark::after {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  top: -4px;
+  left: -4px;
+  border: 1px solid var(--purple);
 }
 
 .control-input:disabled + .control-label {
