@@ -1566,13 +1566,14 @@ img {
   outline: var(--outline-style);
 }
 
-
 /* range-slider */
+.range {
+  padding-top: 8px;
+}
 
 .range-scale {
   width: 200px;
   height: 2px;
-  margin-bottom: 11px;
   background-color: var(--gray-border);
   position: relative;
 }
@@ -1624,7 +1625,6 @@ img {
 
 .range-toggle-max {
   top: -8px;
-  left: 102px;
 }
 
 .range-wrapper {
@@ -1637,12 +1637,16 @@ img {
   position: absolute;
   min-width: 30px;
   height: 18px;
-  top: 0;
+  top: 15px;
   left: -11px;
   margin-right: 10px;
   font-size: 15px;
   line-height: 18px;
   color:rgba(0, 0, 0, 0.3);
+}
+
+.range-count-active {
+  top: 11px;
 }
 
 .range-label {
@@ -1685,11 +1689,13 @@ img {
 .products-filter {
   width: 320px;
   padding: 25px 60px;
+  padding-right: 40px;
   font-size: 16px;
   line-height: 19px;
 }
 
 .products-filter-group {
+  width: 200px;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
@@ -1707,6 +1713,10 @@ img {
   background-color: var(--title-color);
 }
 
+.products-filter-range {
+  margin-bottom: 50px;
+}
+
 .products-filter-subtitle {
   margin-top: 0;
   margin-bottom: 58px;
@@ -1716,7 +1726,7 @@ img {
 }
 
 .products-filter-legend {
-  padding-top: 12px;
+  padding-top: 13px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
@@ -1731,14 +1741,19 @@ img {
 }
 
 .products-filter-item {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .products-filter-item:last-child {
   margin-bottom: 0;
 }
 
+.products-filter-item-radio {
+  margin-bottom: 20px;
+}
+
 .products-filter-button {
+  margin-top: 2px;
   width: 100%;
 }
 
