@@ -8,143 +8,145 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="wrapper header-container">
-      <a class="logo header-logo" href="index.html">
-        <img src="images/logo-black.svg" alt="Логотип магазина." width="145" height="36">
-      </a>
-      <div class="header-inner">
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-          <div class="header-search-field-wrapper">
-            <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска"
-              id="user-search" aria-label="Строка поиска.">
-            <div class="header-search-decorator"></div>
-          </div>
-          <div class="header-search-btn-wrapper">
-            <button class="header-search-btn" type="submit">Найти</button>
-            <div class="header-search-btn-decorator"></div>
-          </div>
-        </form>
-        <ul class="header-usermenu">
-          <li class="header-usermenu-item">
-            <a class="header-usermenu-link" href="#">
-              <svg class="header-usermenu-icon" aria-hidden="true" focusable="false" width="13" height="13"
-                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M0 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 1.99 3 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
-              </svg>
-              Коля Петухов
-            </a>
-          </li>
-          <li class="">
-            <a class="header-usermenu-link header-usermenu-link-logout" href="#">Выйти</a>
-          </li>
-          <li class="header-usermenu-item">
-            <a class="header-usermenu-link" href="#">
-              <svg class="header-usermenu-icon" aria-hidden="true" focusable="false" width="10" height="13"
-                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" />
-              </svg>
-              Сравнить
-            </a>
-          </li>
-          <li class="header-usermenu-item">
-            <a class="header-usermenu-link header-usermenu-link-cart" href="#">
-              <span class="header-usermenu-count">2</span>
-              <svg class="header-usermenu-cart" aria-hidden="true" focusable="false" width="16" height="15"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" />
-              </svg>
-              Корзина
-            </a>
-            <div class="popover-cart popover-closed">
-              <div class="popover-cart-content">
-                <h2 class="popover-title visually-hidden">
-                  Посмотреть товары в корзине.
-                </h2>
-                <ul class="popover-cart-list">
-                  <li class="popover-cart-item">
-                    <a class="popover-cart-preview" href="#">
-                      <img class="popover-cart-image" src="images/products/product-1.jpg" width="39" height="43"
-                        alt="Любительская селфи-палка.">
-                      <span class="popover-cart-name">Любительская селфи-палка</span>
-                    </a>
-                    <button class="popover-cart-remove" type="button">
-                      <span class="visually-hidden">Удалить товар.</span>
-                    </button>
-                  </li>
-                  <li class="popover-cart-item">
-                    <a class="popover-cart-preview" href="#">
-                      <img class="popover-cart-image" width="39" height="43" src="images/products/product-2.jpg"
-                        alt="Профессиональная селфи-палка.">
-                      <span class="popover-cart-name">Профессиональная селфи-палка</span>
-                    </a>
-                    <button class="popover-cart-remove" type="button">
-                      <span class="visually-hidden">Удалить товар.</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="popover-cart-resume">
-                  <p>
-                    <span>Товаров: </span><span class="popover-cart-count">2</span>
-                  </p>
-                  <p>
-                    <span>Сумма: </span><span class="popover-cart-price">2000 ₽</span>
-                  </p>
-                </div>
-                <div class="popover-cart-inner">
-                  <a class="button popover-cart-button" href="#">Открыть корзину</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <a class="logo header-logo" href="index.html">
+          <img src="images/logo-black.svg" alt="Логотип магазина." width="145" height="36">
+        </a>
+        <div class="header-inner">
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+            <div class="header-search-field-wrapper">
+              <input class="header-search-field" type="text" name="search-field" placeholder="Текст поиска"
+                id="user-search" aria-label="Строка поиска.">
+              <div class="header-search-decorator"></div>
+            </div>
+            <div class="header-search-btn-wrapper">
+              <button class="header-search-btn" type="submit">Найти</button>
+              <div class="header-search-btn-decorator"></div>
+            </div>
+          </form>
+          <ul class="header-usermenu">
+            <li class="header-usermenu-item">
+              <a class="header-usermenu-link" href="#">
+                <svg class="header-usermenu-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 1.99 3 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
+                </svg>
+                Коля Петухов
+              </a>
+            </li>
+            <li class="">
+              <a class="header-usermenu-link header-usermenu-link-logout" href="#">Выйти</a>
+            </li>
+            <li class="header-usermenu-item">
+              <a class="header-usermenu-link" href="#">
+                <svg class="header-usermenu-icon" aria-hidden="true" focusable="false" width="10" height="13"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" />
+                </svg>
+                Сравнить
+              </a>
+            </li>
+            <li class="header-usermenu-item">
+              <a class="header-usermenu-link header-usermenu-link-cart" href="#">
+                <span class="header-usermenu-count">2</span>
+                <svg class="header-usermenu-cart" aria-hidden="true" focusable="false" width="16" height="15"
+                  xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" />
+                </svg>
+                Корзина
+              </a>
+              <div class="popover-cart popover-closed">
+                <div class="popover-cart-content">
+                  <h2 class="popover-title visually-hidden">
+                    Посмотреть товары в корзине.
+                  </h2>
+                  <ul class="popover-cart-list">
+                    <li class="popover-cart-item">
+                      <a class="popover-cart-preview" href="#">
+                        <img class="popover-cart-image" src="images/products/product-1.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка.">
+                        <span class="popover-cart-name">Любительская селфи-палка</span>
+                      </a>
+                      <button class="popover-cart-remove" type="button">
+                        <span class="visually-hidden">Удалить товар.</span>
+                      </button>
+                    </li>
+                    <li class="popover-cart-item">
+                      <a class="popover-cart-preview" href="#">
+                        <img class="popover-cart-image" width="39" height="43" src="images/products/product-2.jpg"
+                          alt="Профессиональная селфи-палка.">
+                        <span class="popover-cart-name">Профессиональная селфи-палка</span>
+                      </a>
+                      <button class="popover-cart-remove" type="button">
+                        <span class="visually-hidden">Удалить товар.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-cart-resume">
+                    <p>
+                      <span>Товаров: </span><span class="popover-cart-count">2</span>
+                    </p>
+                    <p>
+                      <span>Сумма: </span><span class="popover-cart-price">2000 ₽</span>
+                    </p>
+                  </div>
+                  <div class="popover-cart-inner">
+                    <a class="button popover-cart-button" href="#">Открыть корзину</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+        <nav class="header-navigation header-navigation-page">
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item">
+              <a class="header-navigation-link header-navigation-catalog" href="#">Каталог
+                товаров</a>
+              <ul class="header-submenu header-submenu-closed">
+                <li class="header-submenu-item">
+                  <a class="header-submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="header-submenu-item">
+                  <a class="header-submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="header-submenu-item header-submenu-break">
+                  <a class="header-submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+                <li class="header-submenu-item">
+                  <a class="header-submenu-link header-submenu-current" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="header-submenu-item header-submenu-break">
+                  <a class="header-submenu-link" href="#">Умные часы</a>
+                </li>
+                <li class="header-submenu-item">
+                  <a class="header-submenu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-navigation header-navigation-page">
-        <ul class="header-navigation-list">
-          <li class="header-navigation-item">
-            <a class="header-navigation-link header-navigation-catalog" href="#">Каталог
-              товаров</a>
-            <ul class="header-submenu header-submenu-closed">
-              <li class="header-submenu-item">
-                <a class="header-submenu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="header-submenu-item">
-                <a class="header-submenu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="header-submenu-item header-submenu-break">
-                <a class="header-submenu-link" href="#">Квадрокоптеры</a>
-              </li>
-              <li class="header-submenu-item">
-                <a class="header-submenu-link header-submenu-current" href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="header-submenu-item header-submenu-break">
-                <a class="header-submenu-link" href="#">Умные часы</a>
-              </li>
-              <li class="header-submenu-item">
-                <a class="header-submenu-link" href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="header-navigation-item">
-            <a class="header-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
+  </div>
   <main class="main-inner main-container">
-    <header class="inner-header">
-      <div class="wrapper inner-header-container">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
+    <header class="wrapper page-header">
+      <div class="page-header-container">
+        <h1 class="page-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -287,8 +289,7 @@
           <ul class="goods-list">
             <li class="goods-list-item">
               <a class="goods-list-preview" href="#">
-                <img class="goods-list-image" src="images/products/product-1.jpg" alt="Любительская селфи-палка."
-                  width="360" height="380">
+                <img class="goods-list-image" src="images/products/product-1.jpg" alt="Любительская селфи-палка." width="360" height="380">
                 <div class="goods-list-info">
                   <h3 class="goods-list-name">Любительская<br> селфи-палка</h3>
                   <span class="goods-list-price">500 ₽</span>
@@ -298,8 +299,7 @@
             </li>
             <li class="goods-list-item">
               <a class="goods-list-preview goods-list-new" href="#">
-                <img class="goods-list-image" src="images/products/product-2.jpg" alt="Профессиональная селфи-палка."
-                  width="360" height="380">
+                <img class="goods-list-image" src="images/products/product-2.jpg" alt="Профессиональная селфи-палка." width="360" height="380">
                 <div class="goods-list-info">
                   <h3 class="goods-list-name">Профессиональная селфи-палка</h3>
                   <span class="goods-list-price">1500 ₽</span>
