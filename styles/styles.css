@@ -100,7 +100,10 @@ img {
   width: 1440px;
   margin: 0 auto;
   padding: 0 140px;
-  /* padding-bottom: 70px;*/
+}
+
+.wrapper-page {
+  display: flex;
 }
 
 .button {
@@ -1561,7 +1564,6 @@ img {
 }
 
 .main-inner-container {
-  display: flex;
   padding-bottom: 0;
   background-color: var(--light-gray);
 }
